@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Red And White Multimedia Education</title>
+</head>
+
+<body>
+  <div class="container mx-auto ">
+    <form class="row g-3 mt-5" id="table_data_store">
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">GR Id</label>
+        <input type="text" class="form-control" id="grid" placeholder="Enter GR Id">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Phone Number</label>
+        <input type="number" class="form-control" id="phone" placeholder="Phone Number">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Image</label>
+        <input type="url" class="form-control" id="image" placeholder="Enter Image URL">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Course</label>
+        <select id="select" class="form-select">
+          <option selected>Course</option>
+          <option value="Master in Web Designing">Master in Web Designing</option>
+          <option value="Master in Front End Developing">Master in Front End Developing</option>
+          <option value="Master in iOS Development">Master in iOS Development</option>
+          <option value="Master in Animation">Master in Animation</option>
+          <option value="Master in Flutter">Master in Flutter</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="mt-5 mx-auto box">
+    <div class="container">
+      <table border="1px solid black" cellspacing="5px" cellpadding="10px">
+        <thead>
+          <tr>
+            <th>FullName</th>
+            <th>GR ID</th>
+            <th>Phone</th>
+            <th>Image</th>
+            <th>Course</th>
+            <th id="del">Delete All </th>
+          </tr>
+        </thead>
+        <tbody id="data-table">
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
